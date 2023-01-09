@@ -1,0 +1,149 @@
+
+/* ######################## Tablet version (Frame - Apple Ipad Mini)########################### */
+@media screen and (max-width:768px) and (min-width:591px) {
+    .restaurant-info{
+        height: 3vh;
+        min-height: 30px;
+    }
+    .restaurant-info a.cros-x{
+        font-size: 0.8rem;
+    }
+    .restaurant-info p{
+        font-size: 0.7rem;
+    }
+    .navbar-container{
+        height: 12vh;
+        padding-top: 0.5rem;
+    }
+    .navbar-container h1{
+        font-size: 2rem;
+    }
+    .navbar-container > ul > li{
+        margin: 5px;
+    }
+    .navbar-container ul li a{
+        font-size: 0.65rem;
+        padding: 0.25rem;
+    }
+    .navbar-container ul .social-media-container{
+        /* top: -150%; */
+        right:0;
+    }
+    .navbar-container ul .social-media-container i{
+        font-size: 1rem;
+    }
+    /* .hero-container {
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./images/restaurant-hero-bg.jpg");
+        background-position: center;
+        background-size: cover;
+    } */
+    .hero-container .hero-content h1{
+        font-size: 3.5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .hero-container .hero-content .hero-small-text-second{
+        display: none;
+    }
+}
+/* ######################## MOBILE MOBILE MOBILE MOBILE MOBILE ######################## */
+@media only screen and (max-width:590px) {
+    /* =================== top info ============================ */
+    .restaurant-info{
+        height: 4vh;
+    }
+    .restaurant-info p{
+        font-size: 0.6rem;
+    }
+    .restaurant-info a.cros-x{
+        font-size: 0.9rem;
+    }
+    /*==================== main nav bar container ==================== */
+    .navbar-container{
+        height: 8vh;
+        min-height: 60px;
+        align-items:flex-start;
+    }
+    .navbar-container h1{
+        font-size: 1.5rem;
+    }
+    /* ============== Hamburger ========== */
+    .navbar-container .hamburger-box{
+        display: block;
+    }
+    /* ============== main navbar ============ */
+    .navbar-container ul.main-nav{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        overflow-y: scroll;
+        max-height: max-content;
+        left: 0;
+        top: -1000%;
+        z-index: 1;
+        background-color: yellow;
+    }
+    .navbar-container ul.main-nav.active-nav{
+        top: 100%;
+    }
+    .navbar-container ul li{
+        width: 100%;
+        margin: 0;
+    }
+    .navbar-container ul li a{
+        display: inline-block;
+        width: 100%;
+        padding: 0.7rem;
+    }
+     /* ===== social medias in nav bar ===== */
+    .navbar-container ul .social-media-container{
+        position: relative;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        top: unset;
+        bottom: 0;
+        left: 0;
+    }
+    /* =================== sub navigation bar ==================== */
+    .sub-nav-container ul.sub-menus{
+        position: relative;
+        top:0;
+    }
+    .sub-nav-container ul.sub-menus li{
+        padding-left: 1.5rem;
+    }
+    /* =================== Hero container section ================== */
+    .hero-container {
+        height: 85vh;
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./images/restaurant-hero-bg.jpg");
+        background-position: center;
+        background-size: cover; 
+    }
+    /* ===== hero section content ============== */
+    .hero-container .hero-content{
+        padding-top: 2rem;
+    }
+    .hero-container .hero-bg-img{
+        display: none;
+    }
+    .hero-container .hero-content h1{
+        font-size: 2.6rem;
+        padding: 0 1rem 0 1rem;
+    }
+    .hero-container .hero-content p{
+        font-size: 0.9rem;
+    }
+    .hero-container .hero-content .hero-small-text-second{
+        display: none;
+    }
+  }
+/* &&&&&&&&&&&&&&&&&& HEIGHT &&&&&&&&&&&&&&&& */
+@media screen and (max-height :540px) {
+    .navbar-container ul .social-media-container{
+        top: -40px;
+    }   
+}
